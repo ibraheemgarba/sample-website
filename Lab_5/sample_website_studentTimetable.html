@@ -1,0 +1,103 @@
+<!doctype html>
+<html>
+	<head>
+		<title>Student Timetable</title>
+		<link rel="stylesheet" href="sample_website.css">
+		<style>
+			input{
+				text-decoration: none;
+				border-radius: 25px;
+				text-align: center;
+				border: 0px;
+				color: gray;
+				height: inherit;
+				width: 150px;
+				border: 1px solid gray
+			}
+			td{
+				text-align: center;
+				color: gray;
+			}
+		</style>
+	</head>
+	<body style="background-image:url('C:/Users/USER/Desktop/Sample Website/Images/mit.jpg')">
+		<div id="all">
+			<div class="navbar">
+				<b style="color: blue; font-size: 20px; float: left; padding: 8px 16px;">music Tutorials</b>
+				<a href='sample_website.html'>Homepage</a>
+				<a href='file:///C:/Desktop/Labs/Lab_5/sample_website_tutorials.html'>Tutorials</a>
+				<div class="dropdown">
+					<button class="dropbtn" onclick="myFunction()">  Resources  </button>
+					<div class="dropdown-content" id="myDropdown">
+						<a href="file:///C:/Desktop/Labs/Lab_5/sample_website_GPAcalculator%20.html">learners assesment</a>
+						<a href="file:///C:/Desktop/Labs/Lab_5/sample_website_teacherContacts.html">my Contacts</a>
+					</div>
+				</div>
+				<a href='file:///C:/Users/USER/Desktop/Sample%20Website/Lab_5/sample_website_meeeee.html'>ibraheem cv</a>
+				<a href='sample_website_signup.html'>Contact me</a><br>
+				<button id="signupbtn"><a href="sample_website_signup.html">Sign up</a></button>
+			</div><br>
+			<div>Session: 2021-2022 (Second Semester)</div><br>
+			<div>Department: Music Engineering</div><br>
+			<div>Name: <input type="text" style="width:200px"/></div><br>
+			<div>Student ID: <input type="number"/></div><br>
+		</div>
+			<table id="table" border="1px solid gray">
+				<tr>
+					<th>S/N</th>
+					<th>Monday</th>
+					<th>Tuesday</th>
+					<th>Wednesday</th>
+					<th>Thursday</th>
+					<th>Friday</th>
+				</tr>
+				<tr>
+					<th>09:00 - 10:00</th>
+					<td rowspan="2">FMY 108 - General FOLK MUSIC II</td>
+					<td rowspan="3">CMY 102 - General CLASSICAL MUSIC II (D006)</td>
+					<td rowspan="3">MTY 102 - MUSIC THEORY - LALOSKI(C128)</td>
+					<td rowspan="4"></td>
+					<td rowspan="5"></td>
+				</tr>
+				<tr>
+					<th>10:00 - 11:00</th>
+				</tr>
+				<tr>
+					<th>11:00 - 12:00</th>
+					<td rowspan="2"></td>
+				</tr>
+				<tr>
+					<th>12:00 - 13:00</th>
+					<td rowspan="2">SEN 104 - Intoduction to Music Technologies (Session 2) -  (C129)</td>
+					<td rowspan="2">GST 166/164 - French/Arabic </td>
+				</tr>
+				<tr>
+					<th>13:00 - 14:00</th>
+					<td rowspan="2">MST 104 - Music, Philosophy and Human Existence </td>
+					<td rowspan="2">MEN 104 - Intoduction to Music Technologies (Session 4) - (C132)</td>
+				</tr>
+				<tr>
+					<th>14:00 - 15:00</th>
+					<td rowspan="3">MHY 102 - General Music II (D006)</td>
+					<td rowspan="2">EMN 104 - Intoduction to Music Technologies (Session 3) - (C129)</td>
+					<td rowspan="2">MST 102 - Use of Music II (Online)</td>
+				</tr>
+				<tr>
+					<th>15:00 - 16:00</th>
+					<td rowspan="2">MEN 104 - Intoduction to Music Technologies (Session 1) - (C129)</td>
+					<td rowspan="2">MST 105 - Music and Library skills </td>
+				</tr>
+				<tr>
+					<th>16:00 - 17:00</th>
+					<td></td>
+					<td></td>
+				</tr>
+			</table><br><br>
+			<div style="height: 250px"><button onclick="window.print()" style="text-decoration: none; background-color: white; color: blue; border-radius:25px; border:1px solid blue; float:center; margin-left: 120px; cursor:pointer; width: 70px">Print</button></div>
+		<script>
+			function myFunction() {
+				document.getElementById("myDropdown").classList.toggle("show");
+			}
+		</script>
+	</body>
+</html>
